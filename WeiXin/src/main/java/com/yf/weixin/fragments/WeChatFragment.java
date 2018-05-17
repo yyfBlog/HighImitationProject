@@ -47,7 +47,5 @@ public class WeChatFragment extends BaseFragment {
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        mRecyclerView.addItemDecoration(new RecycleLine(getActivity(),RecycleLine.LINEAR_LAYOUT_ORIENTATION_HORIZONTAL));
-//        mRecyclerView.addItemDecoration(new RecycleLine(getActivity(),RecycleLine.LINEAR_LAYOUT_ORIENTATION_VERTICAL));
     }
 }

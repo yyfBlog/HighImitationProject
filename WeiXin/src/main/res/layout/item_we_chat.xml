@@ -28,5 +28,9 @@
             android:layout_height="wrap_content"
             android:text="巴拉巴拉的一堆简介"/>
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_8c8c8c"/>
 </RelativeLayout>
