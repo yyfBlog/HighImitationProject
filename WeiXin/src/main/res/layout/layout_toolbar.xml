@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c_2b2b2b">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_56">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="微信"
+            android:gravity="center"
+            android:textColor="@color/c_ffffff"
+            android:textSize="@dimen/s_16" />
+
+        <ImageButton
+            android:layout_width="@dimen/d_56"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search_black_24dp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/d_56"/>
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="@dimen/d_56"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_add_black_24dp"
+            android:background="@null"/>
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

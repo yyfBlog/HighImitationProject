@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yf.weixin.MainActivity">
+
+
+    <include android:id="@+id/toolbar" layout="@layout/layout_toolbar" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/d_65" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_upper_line"
+        android:paddingTop="5dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_weChat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_weChat"
+                    android:layout_width="@dimen/d_32"
+                    android:layout_height="@dimen/d_32"
+                    android:src="@mipmap/ic_wechat"/>
+                <TextView
+                    android:id="@+id/tv_weChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信"
+                    android:textColor="@color/c_8c8c8c"
+                    android:textSize="@dimen/s_14"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/d_20"
+                android:layout_height="@dimen/d_20"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/d_15"
+                android:text="1"
+                android:textColor="@color/c_ffffff"
+                android:background="@drawable/bg_circular"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_mailList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_mailList"
+                    android:layout_width="@dimen/d_32"
+                    android:layout_height="@dimen/d_32"
+                    android:src="@mipmap/ic_mail_list"/>
+                <TextView
+                    android:id="@+id/tv_mailList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通讯录"
+                    android:textColor="@color/c_8c8c8c"
+                    android:textSize="@dimen/s_14"
+                    android:gravity="center" />
+            </LinearLayout>
+
+           <!-- <TextView
+                android:layout_width="@dimen/d_15"
+                android:layout_height="@dimen/d_15"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/d_15"
+                android:textColor="@color/c_ffffff"
+                android:background="@drawable/bg_circular"/>-->
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_found"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_found"
+                    android:layout_width="@dimen/d_32"
+                    android:layout_height="@dimen/d_32"
+                    android:src="@mipmap/ic_found"/>
+                <TextView
+                    android:id="@+id/tv_found"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发现"
+                    android:textColor="@color/c_8c8c8c"
+                    android:textSize="@dimen/s_14"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!--<TextView
+                android:layout_width="@dimen/d_15"
+                android:layout_height="@dimen/d_15"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/d_15"
+                android:textColor="@color/c_ffffff"
+                android:background="@drawable/bg_circular"/>-->
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fl_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_me"
+                    android:layout_width="@dimen/d_32"
+                    android:layout_height="@dimen/d_32"
+                    android:src="@mipmap/ic_me"/>
+                <TextView
+                    android:id="@+id/tv_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我"
+                    android:textColor="@color/c_8c8c8c"
+                    android:textSize="@dimen/s_14"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/d_10"
+                android:layout_height="@dimen/d_10"
+                android:layout_gravity="top|center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/d_15"
+                android:textColor="@color/c_ffffff"
+                android:background="@drawable/bg_circular"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
