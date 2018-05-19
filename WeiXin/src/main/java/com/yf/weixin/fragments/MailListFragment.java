@@ -71,7 +71,6 @@ public class MailListFragment extends BaseFragment {
         mAdapter=new MailListAdapter(getActivity(),resultList);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecyclerView.setHasFixedSize(true);
-//        mRecyclerView.addItemDecoration(new RecycleLine(getActivity(),RecycleLine.LINEAR_LAYOUT_ORIENTATION_HORIZONTAL));
         mRecyclerView.setAdapter(mAdapter);
     }
 
