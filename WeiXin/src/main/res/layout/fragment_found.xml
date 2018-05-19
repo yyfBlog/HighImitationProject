@@ -1,11 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c_e4e4e4">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="this  is  three page"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="朋友圈"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="扫一扫"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="摇一摇"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="看一看"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="搜一搜"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="附近的人"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="购物"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_45"
+        android:gravity="left|center"
+        android:layout_marginTop="@dimen/line"
+        android:background="@color/c_ffffff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/d_30"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_height="@dimen/d_30"
+            android:background="@color/c_0080ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_20"
+            android:text="游戏"
+            android:textColor="@color/c_000000"
+            android:textSize="@dimen/s_12" />
+    </LinearLayout>
 </LinearLayout>

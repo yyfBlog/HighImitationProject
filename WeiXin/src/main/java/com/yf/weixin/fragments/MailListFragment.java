@@ -4,13 +4,15 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Toast;
+
 import com.yf.run.baselibrary.BaseFragment;
 import com.yf.weixin.ContactBean;
 import com.yf.weixin.R;
 import com.yf.weixin.adapter.MailListAdapter;
 import com.yf.weixin.widget.ContactComparator;
 import com.yf.weixin.widget.PinyinUtils;
-import com.yf.weixin.widget.RecycleLine;
+import com.yf.weixin.widget.SideBar;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,9 +29,12 @@ import butterknife.ButterKnife;
  * Function: 联系人界面
  */
 
-public class MailListFragment extends BaseFragment {
+public class MailListFragment extends BaseFragment implements SideBar.OnChooseLetterChangedListener {
     @BindView(R.id.recycleView)
     RecyclerView mRecyclerView;
+    @BindView(R.id.slideBar)
+    SideBar mSideBar;
+
     private MailListAdapter mAdapter;
     private List mList;
     private List mContactList;
@@ -72,6 +77,8 @@ public class MailListFragment extends BaseFragment {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setAdapter(mAdapter);
+
+        mSideBar.setOnTouchingLetterChangedListener(this);
     }
 
     private void handleContact() {
@@ -109,8 +116,17 @@ public class MailListFragment extends BaseFragment {
                     }
                 }
             }
-
             resultList.add(new ContactBean(map.get(name), MailListAdapter.ITEM_TYPE.ITEM_TYPE_CONTACT.ordinal()));
         }
+    }
+
+    @Override
+    public void onChooseLetter(String s) {
+        Toast.makeText(getActivity(),s,Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNoChooseLetter() {
+
     }
 }

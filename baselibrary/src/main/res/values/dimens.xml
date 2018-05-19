@@ -6,6 +6,7 @@
     <dimen name="d_45">45dp</dimen>
     <dimen name="d_65">65dp</dimen>
     <dimen name="d_8">8dp</dimen>
+    <dimen name="d_30">30dp</dimen>
     <dimen name="d_32">32dp</dimen>
     <dimen name="line">0.5dp</dimen>
     <dimen name="d_20">20dp</dimen>
@@ -13,6 +14,9 @@
     <dimen name="d_16">16dp</dimen>
     <dimen name="d_15">15dp</dimen>
     <dimen name="d_5">5dp</dimen>
+    <dimen name="d_86">86dp</dimen>
+    <dimen name="d_90">90dp</dimen>
+    <dimen name="d_120">120dp</dimen>
 
 
     <dimen name="s_24">24sp </dimen>
